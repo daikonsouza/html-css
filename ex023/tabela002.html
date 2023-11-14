@@ -32,6 +32,13 @@
             background-color: grey;
             color: white;
         }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
     </style>
 </head>
 <body>
@@ -39,6 +46,7 @@
     <!--
         Anatomia databela
         Table
+          Caption
           Thead
            TR,TD,TH
           Tbody
@@ -48,10 +56,11 @@
     -->
 
     <Table>
+        <caption>Populacão das Unidades Federativas</caption>
         <Thead>
            <tr>
-              <th>Estado</th>
-              <th>Populacão</th>
+              <th scope="col">Estado</th>
+              <th scope="col" style="width: 50px;">Populacão</th>
            </tr>
         </Thead>
 
@@ -110,7 +119,7 @@
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                  <td class="num"><strong>166.493.836</strong></td>
             </tr>
         </tfoot>
